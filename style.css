@@ -1,0 +1,136 @@
+@font-face {
+    font-family: SFRegular;
+    src: url('fontfamily/SF-Pro-Display-Regular.otf');
+}
+
+button {
+    border: none;
+    background-color: #F2F2F7;
+    border-radius: 8px;
+}
+
+input {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: SFRegular;
+    width: 380px;
+    position: relative;
+    padding: 16px;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+}
+
+.headertext {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.tabs {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    background: #F2F2F7;
+    border-radius: 8px;
+    flex-direction: row;
+    height: 32px;
+}
+
+.tabs > div {
+    width: 50%;
+    background-color: #F2F2F7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: none;
+}
+
+.tabs > div.active {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.contentTabs p {
+    color: #747494;
+    margin-bottom: 8px;
+}
+
+.contentTabs form > div{
+    margin-top: 25px;
+}
+
+.contentTabs input {
+    background-color: #F2F2F7;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.contentTabs .weightGym {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weightGym p {
+    margin-top: 0;
+}
+
+.contentTabs .weightGym > div {
+    width: 48%;
+}
+
+.strong .rank {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.strong .rank button {
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+}
+
+.strong .rank button.active {
+    background-color: #33B6FF;
+}
+
+.buttonBlue {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color: #33B6FF;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonBlue p {
+    margin: 0;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 19px;
+    font-size: 16px;
+}
