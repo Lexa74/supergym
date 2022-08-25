@@ -90,6 +90,14 @@ h1 {
     justify-content: space-between;
 }
 
+.contentTabs > div {
+    display: none;
+}
+
+.contentTabs > div.active {
+    display: block;
+}
+
 .weightGym p {
     margin-top: 0;
 }
