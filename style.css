@@ -116,10 +116,13 @@ h1 {
     height: 50px;
     width: 50px;
     font-size: 16px;
+    transition: all .35s;
+    cursor: pointer;
 }
 
 .strong .rank button.active {
     background-color: #33B6FF;
+    color: white;
 }
 
 .buttonBlue {

@@ -38,3 +38,21 @@ let lengthTabs = document.getElementById('forLength').children.length;
   tab[numberTab].classList.add('active');
   tabContent[numberTab].classList.add('active');
  }
+
+ function clickHandler(elem,elems) {
+  elem.addEventListener('click', function(event) {
+    event.preventDefault();
+    resetElementes(elems);
+    elem.classList.add('active');
+  })
+ };
+
+function resetElementes(elems) {
+  elems.forEach(function(elem) {elem.classList.remove('active')});
+} 
+
+ let buttons = document.querySelectorAll('.rank > button');
+ buttons.forEach(function(button) {
+  clickHandler(button,buttons);
+ }) 
+
